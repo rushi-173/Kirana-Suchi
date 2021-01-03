@@ -21,7 +21,7 @@ export default function App() {
           <button onClick={addToList}>+</button>
         </div>
         <div className="list-wrapper">
-          <List itemList={itemList} />
+          <List itemList={itemList} updateItemList={updateItemList} />
         </div>
       </div>
     </div>

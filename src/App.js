@@ -6,10 +6,10 @@ export default function App() {
   let [itemList, updateItemList] = useState([]);
   function changeHandler(e) {
     setCurrentValue(e.target.value);
-    console.log(currentValue);
   }
   function addToList() {
-    updateItemList([...itemList, currentValue]);
+    updateItemList([...itemList, { item: currentValue, key: Date.now() }]);
+    setCurrentValue("");
   }
   return (
     <div className="App">

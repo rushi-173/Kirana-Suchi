@@ -14,7 +14,7 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1>Kirana Suchi</h1>
+      <h2>My ToDo App</h2>
       <div className="main">
         <div className="input-wrapper">
           <input type="text" value={currentValue} onChange={changeHandler} />

@@ -1,0 +1,29 @@
+.item-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.item-list .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #2196f3;
+  margin: 0.2rem;
+}
+
+.item h3 {
+  margin: 0.2rem;
+  padding: 0rem 0.5rem;
+  width: 300px;
+  color: white;
+}
+
+.item button {
+  margin: 0.2rem;
+  width: 100px;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: #212121;
+}

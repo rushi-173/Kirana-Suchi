@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./styles.css";
+import List from "./List";
 
 export default function App() {
   let [currentValue, setCurrentValue] = useState("");
@@ -18,6 +19,9 @@ export default function App() {
         <div className="input-wrapper">
           <input type="text" value={currentValue} onChange={changeHandler} />
           <button onClick={addToList}>+</button>
+        </div>
+        <div className="list-wrapper">
+          <List itemList={itemList} />
         </div>
       </div>
     </div>
